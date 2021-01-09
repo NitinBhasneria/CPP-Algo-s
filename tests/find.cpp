@@ -18,5 +18,4 @@ int main ()
     itr = find(v.begin(), v.end(), 5);
     if(itr!=end(v))
         cout<<itr-v.begin()<<endl;
-    
 }
