@@ -12,7 +12,7 @@ void PrimeFacOf(int n, int d[]){
 // d[i] gives the first prime factor or smallest prime factor of i.
 int main()
 {
-    const int N=1e2+5;
+    const int N=10;
     static int d[N]; //static is for holding more variables
 
     vector<int> primes;
