@@ -18,6 +18,9 @@ void mergeSort(int a[], int si, int ei){
     // for(int i=si;i<=ei;i++){
     //     cout<<a[i]<<" ";
     // }
+
+
+    //merging two sorted array
     for(int i=0;i<(ei-si+1);i++){
         if(k>mid){
             while(i<ei-si+1){
