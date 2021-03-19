@@ -50,7 +50,7 @@ int getMin(int *arr, int n){
         sum += dp[i];
     }
     delete[] dp;
-     return sum;
+    return sum;
 }
 
 int main()
