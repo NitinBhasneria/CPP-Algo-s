@@ -28,18 +28,20 @@ using namespace std;
 typedef long l;
 
 int solve2(string str, int n, int* mp) {
-    // cout<<(char)str[n-1]<<" "<<mp[(char)str[n-1]]<<endl;
     if(n==1){
         mp[(char)str[0]] = 1;
         return 2;
     }
+    
     l ans = solve2(str, n-1, mp);
     l temp = ans;
-    l aa = (2*ans)%N;
-    int final = ((int)aa - mp[str[n-1]])%N;
-    mp[str[n-1]] = (int)temp;
-    return final;
+    l aa = (2*ans - mp[str[n-1]])%N;
+    int final = (int)aa%N;
+    mp[str[n-1]] = temp;
+    if(final < 0) final += N;
     
+    // cout<<temp<<" "<<final<<endl;
+    return final;
 }
 
 int main() {
@@ -48,10 +50,9 @@ int main() {
     while(n--){
         string s;
         cin>>s;
+        cout<<s.length()<<endl;
         int mp[140] = {0};
-    	int size= s.length();
-    	int ans = solve2(s, size, mp);
-
+        int ans = solve2(s, s.length(), mp);
         cout<<ans<<"\n";
     }
 }
