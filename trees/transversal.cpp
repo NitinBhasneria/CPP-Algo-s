@@ -20,7 +20,7 @@ tree* createNode(int element){
     root->left = root->right =  NULL;
 }
 
-void insertNode (tree* root, int element) {
+void insertNode (tree* root, int element) { //level - order approach
     if(root==NULL){
         root = createNode(element);
         return ;
