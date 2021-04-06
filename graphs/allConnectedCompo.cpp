@@ -11,18 +11,25 @@ void printBFS(int** edges, int n, int sv, bool* visited) {
     queue<int> pendingVertices;
     visited[sv] = 1;
     pendingVertices.push(sv);
+
+    vector<int>* ans = new vector<int>(); 
+
     while(!pendingVertices.empty()) {
         int current = pendingVertices.front();
         pendingVertices.pop();
-        cout<<current<<" ";
+        ans->push_back(current);
         for(int i=0;i<n;i++){
-            if(i == current) continue;
             if(edges[current][i] == 1 && !visited[i]) {
                 pendingVertices.push(i);
                 visited[i] = true;
             }
         }
     }
+    sort(ans->begin(), ans->end());
+    for(int i = 0; i<ans->size();i++){
+        cout<<ans->at(i)<<" ";
+    }
+    delete ans;
 }
 
 void BFS(int** edges,  int n) {
@@ -31,8 +38,10 @@ void BFS(int** edges,  int n) {
         visited[i] = false;
 
     for(int i=0;i<n;i++) {
-        if(!visited[i]) 
+        if(!visited[i]) {
             printBFS(edges, n, i, visited);
+            cout<<endl;
+        }
     }
 
     delete[] visited;       
@@ -46,7 +55,7 @@ int main() {
         return 0;
     if(e==0){
         for(int i=0;i<n;i++)
-        	cout<<i<<" ";
+        	cout<<i<<"\n";
         return 0;
     }
     int** edges = new int*[n];

@@ -1,20 +1,21 @@
-// BFS Adjancency Matrix
-// Breadth First Search 
-// Disconnected Graph
-// Will use queue// DFS Technique
-
 #include<bits/stdc++.h>
 using namespace std;
 
-void printBFS(int** edges, int n, int sv, bool* visited) {
+bool isConnected(int** edges, int n, int sv) {
 
     queue<int> pendingVertices;
+    bool* visited = new bool[n];
+    for(int i=0;i<n;i++)
+        visited[i] = 0;
     visited[sv] = 1;
+    int count = 0;
     pendingVertices.push(sv);
     while(!pendingVertices.empty()) {
         int current = pendingVertices.front();
         pendingVertices.pop();
-        cout<<current<<" ";
+        
+        count+=1;
+
         for(int i=0;i<n;i++){
             if(i == current) continue;
             if(edges[current][i] == 1 && !visited[i]) {
@@ -23,32 +24,14 @@ void printBFS(int** edges, int n, int sv, bool* visited) {
             }
         }
     }
-}
-
-void BFS(int** edges,  int n) {
-    bool* visited = new bool[n];
-    for(int i=0;i<n;i++)
-        visited[i] = false;
-
-    for(int i=0;i<n;i++) {
-        if(!visited[i]) 
-            printBFS(edges, n, i, visited);
-    }
-
-    delete[] visited;       
+    delete[] visited;
+    return (n==count);
 }
 
 int main() {
     int n; // number of vertices
     int e; // number of edges;
     cin>>n>>e;
-    if(n==0)
-        return 0;
-    if(e==0){
-        for(int i=0;i<n;i++)
-        	cout<<i<<" ";
-        return 0;
-    }
     int** edges = new int*[n];
     for(int i=0;i<n;i++){
         edges[i] = new int[n];
@@ -64,7 +47,10 @@ int main() {
     }
     
 
-    BFS(edges, n);
+    if(isConnected(edges, n, 0)){
+        cout<<true;
+    }
+    else cout<<false;
 
     for(int i=0;i<n;i++){
         delete[] edges[i];
