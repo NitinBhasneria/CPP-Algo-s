@@ -3,14 +3,8 @@
 
 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/ISO_C%2B%2B_Logo.svg/1200px-ISO_C%2B%2B_Logo.svg.png" width=100> <img src="https://www.codingninjas.com/assets-landing/images/CNLOGO.svg" width=200>
 
-This Repository Contains all my codes which I wrote during the competitive programming course with <a href="https://www.codingninjas.com/">Coding Ninjas</a></br>
-(PS: For some of the questions you may like to check out the commit history to know how did I proceed step by step for that question)</br>
-
 # Disclaimer:
 <p>Copying and pasting the code from this repo to the CN's console won't help you in the long run. Everyone wants to be a competitive programmer to get that package worth lakhs at FAANG, but it takes a lot of hard work and dedication to achieve something like that. Don't get frustrated, believe in yourself, give it some time, relax and eventually you will see the results.</p>
-<p>
-I am myself not very good at competitive programming. If you choose to see any of these codes before trying it on your own and giving your 100%, you chose easier path. And I wish you luck for your future. :slightly_smiling_face:
-<p>
 
 # Insights (In Hinglish)
 1. Merge sort is better than selection sort</br>
