@@ -6,7 +6,7 @@
 # Disclaimer:
 <p>Copying and pasting the code from this repo to the CN's console won't help you in the long run. Everyone wants to be a competitive programmer to get that package worth lakhs at FAANG, but it takes a lot of hard work and dedication to achieve something like that. Don't get frustrated, believe in yourself, give it some time, relax and eventually you will see the results.</p>
 
-# Insights (In Hinglish)
+# Insights (In Hinglish) // preety good notes by parikshit
 1. Merge sort is better than selection sort</br>
 
 2. In bubble sort we compare the first two elements then the next two elements.. and so on, multiple times. So the time complexity of bubble sort is O(n^2).</br>
@@ -78,4 +78,3 @@ If you have got an optimized solution to a problem or, lets say, the existing so
 1. Make another file in the corresponding folder'
 2. Name it `<problem name in snake case>-<your name in snake case>-Updated.cpp`. for example, if the problem name is `Angry Children`, then name of the file which will contain the optimized code should be `angry_children-{your_name}-Updated.cpp`
 3. Generate a pull request and wait.
-    
