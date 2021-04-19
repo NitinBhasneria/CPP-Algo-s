@@ -6,7 +6,10 @@
 # Disclaimer:
 <p>Copying and pasting the code from this repo to the CN's console won't help you in the long run. Everyone wants to be a competitive programmer to get that package worth lakhs at FAANG, but it takes a lot of hard work and dedication to achieve something like that. Don't get frustrated, believe in yourself, give it some time, relax and eventually you will see the results.</p>
 
-# Insights (In Hinglish) // preety good notes by parikshit
+# Insights (In Hinglish) // MINE
+1. 
+
+# Insights (In Hinglish) // Parikshit Notes
 1. Merge sort is better than selection sort</br>
 
 2. In bubble sort we compare the first two elements then the next two elements.. and so on, multiple times. So the time complexity of bubble sort is O(n^2).</br>
