@@ -6,6 +6,8 @@
 # Disclaimer:
 <p>Copying and pasting the code from this repo to the CN's console won't help you in the long run. Everyone wants to be a competitive programmer to get that package worth lakhs at FAANG, but it takes a lot of hard work and dedication to achieve something like that. Don't get frustrated, believe in yourself, give it some time, relax and eventually you will see the results.</p>
 
+PS: Hand written notes will be updates soon//
+
 # Insights (In Hinglish) // MINE
 1. 
 
