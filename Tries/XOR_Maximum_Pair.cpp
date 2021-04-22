@@ -67,6 +67,7 @@ int main() {
     trieNode* head = new trieNode();
     for(int i=0;i<n;i++) {
         insert(arr[i], head);
+        
     }
 
     cout<<findMaxXorPair(head, arr, n);
