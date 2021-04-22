@@ -1,3 +1,22 @@
+/*
+Maximum XOR Subarray
+Send Feedback
+Given
+.0 an array of n integers, find subarray whose xor is maximum.
+Input Format
+First line contains single integer n (1<=n<=1000000).
+Next line contains n space separated integers.
+Output Format
+Print xor of the subarray whose xor of all elements in subarray is maximum over all subarrays.
+Constraints
+1 <= n <= 1000000
+1 <= A[i] <=100000 
+Sample Input
+4
+1 2 3 4
+Sample Output
+7
+*/
 // Remember if x^y=z then z^y=x;
 #include<bits/stdc++.h>
 using namespace std;
@@ -45,7 +64,7 @@ int maxSubarrayXOR(int arr[], int n)
     for (int i=0; i<n; i++)
     {
         pre_xor = pre_xor^arr[i];
-        insert(root, pre_xor);
+        
         trieNode* curr = root;
         for (int i=31; i>=0; i--)
         {
@@ -64,6 +83,7 @@ int maxSubarrayXOR(int arr[], int n)
                 }
             }
         }
+        insert(root, pre_xor);
         result = max(result, pre_xor^(curr->value));
     }
     return result;
