@@ -1,7 +1,2 @@
-factorial
-factorialaa
-factorial
-factorialaa
-fadtory
-No suggestions
-pradyumn
+Sum of first five elements 15
+Sum of elements from 2 index t 6 index 26
