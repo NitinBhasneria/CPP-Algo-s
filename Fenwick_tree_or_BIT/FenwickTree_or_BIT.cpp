@@ -11,6 +11,10 @@ void update(int index, int value, int* BIT, int n) {
     for(;index<=n;index+=(index&(-index))){
         BIT[index] += value;
     }    
+    // for(int i=1;i<=n;i++) {
+    //     cout<<BIT[i]<<" ";
+    // }
+    // cout<<endl;
 }
 
 int query(int index, int* BIT) {
